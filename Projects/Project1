@@ -1,0 +1,65 @@
+using System.Linq.Expressions;
+
+namespace ISM6225_Intro_Programming
+{
+    internal class Program
+    {
+        static void Main(string[] args) //What class runs first
+        {
+            int MaxHR(int age)
+            {
+                int maxHeartRate = 220 - age;
+                return maxHeartRate;
+            }
+            //bool stopProgram = false; //Flag variable to control the loop
+            //while (stopProgram == false) //while topProgram is eqivilent to false
+            //{
+            //stopProgram = true; //Can be here or inside the try block
+            try
+                {
+                    Console.WriteLine("Enter your name");
+                    string userInputName = Console.ReadLine();
+                    Console.WriteLine("Enter your age");
+                    string userAge = Console.ReadLine();
+                    int myAge = Convert.ToInt32(userAge);
+                    int getMaxHR = MaxHR(myAge);//had to call it inside the main method
+
+                    Console.WriteLine("Give me the value of x: ");
+                    string userInputX = Console.ReadLine();
+                    int x = Convert.ToInt32(userInputX);
+                    //int x;
+                    int y;
+                    //x = 1;
+                    y = 10;
+                int[] ages = new int[] { 22, 21, 25, 27 };//first is at 0, last element (fourth) at 3
+
+                    //Ensure that the variables are initialized before using them
+                    //stopProgram = true; inside the if blocks
+                    if (x > y)
+                    {
+                        Console.WriteLine("The value of x is greater than y.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("The value of x is less than or equal to y.");
+                    }
+                    int z = x + y;
+                    int w = x * y;
+                    double h = (double)x / y;
+
+                    Console.WriteLine("The value of x is: " + x);
+                    Console.WriteLine("The value of y is: " + y);
+                    Console.WriteLine("The value of x + y is: " + z);
+                    Console.WriteLine("The value of x * y is: " + w);
+                    Console.WriteLine("The value of x / y is: " + h);
+                    Console.WriteLine("Your name is " + userInputName);
+                    Console.WriteLine("Your Max Heart Rate is: " + MaxHR);
+            } //End of try
+                catch
+                {
+                    Console.WriteLine("You have an error");
+                }
+            //} //End of while loop
+        } //End of main
+    } //End of class
+} //End of namespace
