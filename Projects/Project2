@@ -1,6 +1,6 @@
 ---
 title: "COD_Final_Proj"
-author: "Evan Arias-Johnson"
+author: "Evan Arias-Johnson/Sherman LaCost"
 date: "2024-11-18"
 output: word_document
 ---
@@ -454,4 +454,5 @@ confusion <- confusionMatrix(knn.pred_3, test_labels_3)
 print(confusion)
 
 ```
+
 
