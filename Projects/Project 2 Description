@@ -1,0 +1,4 @@
+File Name: Project 2
+Description: Example code project used to predict player skill based on different COD (call of duty) player metrics. Code went through different metrics, found
+what made a player "skilled" and the different groupings based on mechanical skill and real skill. 
+Technology used: R language, R packages Libraries
