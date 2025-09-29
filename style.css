@@ -33,7 +33,7 @@ body{
 
 /* Layout container */
 .container{
-  width: 92%;
+  width: 90%;
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 48px 0;
